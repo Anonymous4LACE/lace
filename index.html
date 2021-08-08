@@ -256,10 +256,9 @@
             <div class="section-header">Controllable Generation on AFHQ Cats [3] </div>
             <div>
                 In controllable generation on AFHQ Cats, the image synthesis is controlled by the attribute code. As shown in the
-                following, modifying each attribute corresponds to an effective and disentangled semantic change in
-                synthesized images. Note that the original image resolution is 1024x1024, and we have compressed the
-                gifs to some degree to save the memory. As a result, you may observe some artifacts caused by the gif
-                compression.
+                following, the generated images are conditioned on either a single attribute or a combination of multiple attribtues.
+                Note that the original AFHQ Cats dataset does not contain the ground-truth attribute, and thus we have used the CLIP [4]
+                to first annotate the generated images and then apply our method.
             </div>
         </div>
 
@@ -293,6 +292,9 @@
         </div>
         <div>
             [3] Y. Choi and Y. Uh and J. Yoo and J.-W. Ha, StarGAN v2: Diverse Image Synthesis for Multiple Domains, CVPR 2020.
+        </div>
+        <div>
+            [4] A. Radford, et. al, Learning Transferable Visual Models From Natural Language Supervision, ICML 2021.
         </div>
     </div>
 
